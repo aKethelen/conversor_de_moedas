@@ -47,11 +47,11 @@ Certifique-se de ter o arquivo gson-2.11.0.jar na pasta lib.
 
 Compile o projeto:
 
-Bash
+## Bash
 javac -cp ".;lib/gson-2.11.0.jar" src/*.java -d bin
 Execute a aplicação:
 
-Bash
+## Bash
 java -cp "bin;lib/gson-2.11.0.jar" Main
 
 
