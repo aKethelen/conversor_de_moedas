@@ -8,8 +8,8 @@
 ![GSON](https://img.shields.io/badge/GSON-2.11.0-blue)
 ![API](https://img.shields.io/badge/ExchangeRate--API-Success-green)
 
-<img src="./badge-main-one.png" height="200" alt="Badge ONE">
-<img src="./Badge-Conversor.png" height="200" alt="Badge Conversor">
+<img src="./badge-main-one.jpeg" height="200" alt="Badge ONE">
+<img src="./Badge-Conversor.jpeg" height="200" alt="Badge Conversor">
 
 </div>
 
