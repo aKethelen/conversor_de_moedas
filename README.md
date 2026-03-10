@@ -1,62 +1,68 @@
-# Conversor de Moedas - Challenge Java ONE
+<h1 align="center">
+  Conversor de Moedas - Challenge Java ONE
+</h1>
 
-## Descrição do Projeto
-Este projeto foi desenvolvido como parte do desafio final de Java no programa Oracle Next Education (ONE). O objetivo é criar um conversor de moedas interativo via terminal que consome taxas de câmbio em tempo real através de uma API externa.
+<div align="center">
+
+![Java](https://img.shields.io/badge/Java-17-orange)
+![GSON](https://img.shields.io/badge/GSON-2.11.0-blue)
+![API](https://img.shields.io/badge/ExchangeRate--API-Success-green)
+
+<img src="./badge-main-one.png" height="200" alt="Badge ONE">
+<img src="./Badge-Conversor.png" height="200" alt="Badge Conversor">
+
+</div>
+
+## Sobre o Projeto
+Esta aplicação foi desenvolvida como o desafio final do módulo de Java no programa **Oracle Next Education (ONE)** em parceria com a **Alura**. O sistema consiste em uma ferramenta de linha de comando que realiza a conversão de valores entre diferentes moedas em tempo real, utilizando integração com a API externa **ExchangeRate-API**.
+
+
+
+## Desenvolvedora
+Kethelen de Azevedo Fernandes
+
+Estudante de Ciência da Computação
+
+Oracle Next Education (ONE) - Alura
+
+## Licença
+Este projeto está sob a Licença MIT.
+
 
 ## Funcionalidades
-O sistema oferece um menu interativo com as seguintes conversões:
-
-Dolar (USD) para Peso Argentino (ARS)
-
-Peso Argentino (ARS) para Dolar (USD)
-
-Dolar (USD) para Real Brasileiro (BRL)
-
-Real Brasileiro (BRL) para Dolar (USD)
-
-Dolar (USD) para Peso Boliviano (BOB)
-
-Peso Boliviano (BOB) para Dolar (USD)
+O software disponibiliza um menu interativo para as seguintes operações de câmbio:
+1. **Dólar (USD) para Peso Argentino (ARS)**
+2. **Peso Argentino (ARS) para Dólar (USD)**
+3. **Dólar (USD) para Real Brasileiro (BRL)**
+4. **Real Brasileiro (BRL) para Dólar (USD)**
+5. **Dólar (USD) para Peso Boliviano (BOB)**
+6. **Peso Boliviano (BOB) para Dólar (USD)**
 
 ## Tecnologias e Ferramentas
-Linguagem: Java (JDK 17+)
+- **Linguagem**: Java (JDK 17 ou superior).
+- **Biblioteca**: Google GSON (versão 2.11.0) para desserialização de dados JSON.
+- **API**: ExchangeRate-API.
+- **IDE**: Visual Studio Code.
 
-Biblioteca: Google GSON para manipulação de arquivos JSON.
+## Estrutura do Projeto
+A arquitetura do sistema foi dividida para garantir a separação de responsabilidades:
+- **Main.java**: Ponto de entrada da aplicação, responsável pelo fluxo de controle e interface com o usuário.
+- **ConsultaMoeda.java**: Responsável por gerenciar a comunicação HTTP e tratar a resposta JSON da API.
+- **Conversor.java**: Contém a lógica de negócio e os cálculos matemáticos de conversão.
 
-API: ExchangeRate-API para obtenção de taxas dinâmicas.
+## Instruções de Execução
 
-IDE: Visual Studio Code.
+### 1. Pré-requisitos
+- Java JDK 17+ instalado.
+- Biblioteca `gson-2.11.0.jar` presente no diretório `lib`.
 
-## Estrutura de Arquivos
-O projeto segue uma estrutura organizada para facilitar a manutenção:
+### 2. Compilação e Execução
+No terminal, utilize os comandos abaixo para preparar e rodar o projeto:
 
-src/Main.java: Ponto de entrada que gerencia o menu e a interação com o usuário.
-
-src/ConsultaMoeda.java: Responsável pela requisição HTTP e extração dos dados da API.
-
-src/Conversor.java: Classe utilitária que contém a lógica matemática da conversão.
-
-lib/: Pasta contendo as dependências externas (.jar).
-
-bin/: Pasta para os arquivos compilados (.class).
-
-## Como Executar
-Clone este repositório.
-
-Certifique-se de ter o arquivo gson-2.11.0.jar na pasta lib.
-
-Compile o projeto:
-
-## Bash
+```bash
+# Compilar o projeto
 javac -cp ".;lib/gson-2.11.0.jar" src/*.java -d bin
-Execute a aplicação:
 
-## Bash
+# Executar a aplicação
 java -cp "bin;lib/gson-2.11.0.jar" Main
-
-
-## Autora
-
-Kethelen de Azevedo Fernandes  
-Oracle Next Education (ONE) - Alura
 
